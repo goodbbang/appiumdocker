@@ -39,5 +39,5 @@ cd testscript
 ls -al
 pwd
 #./gradlew --debug --stacktrace clean test -DTID=$TID -DUDID=$UDID -DMODEL=$MODEL -DVERSION=$VERSION -DPLATFORM=$PLATFORM -DSDK=$SDK -DDEVICESERIAL=$DEVICE_SERIAL
-mvn clean install 
+mvn clean install -DSERIAL=$SERIAL
 #-DVERSION=$VERSION -DPLATFORM=$PLATFORM
