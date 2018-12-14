@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#if [ "$PLATFORM" == "" ]; then
-#  echo "Please provide $PLATFORM"
-#  exit
-#fi
+if [ "$SERIAL" == "" ]; then
+  echo "Please provide $SERIAL"
+  exit
+fi
 
 #if [ "$VERSION" == "" ]; then
 #  echo "Please provide $SDK"
@@ -15,8 +15,7 @@
 
 #adb connect localhost:7401
 
-DEVICE_SERIAL="0715f7f091320404"
-connectUrl=$(node ./stf/stf_connect.js $DEVICE_SERIAL)
+connectUrl=$(node ./stf/stf_connect.js $SERIAL)
 echo $connectUrl
 # Run appium server
 echo "Run appium server"
